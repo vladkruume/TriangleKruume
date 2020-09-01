@@ -58,7 +58,7 @@ namespace TriangleKruume
             get { return c; }
             set { c = value; }
         }
-        public bool ExistTriange
+        public bool ExistTriangle
         {
             get
             {
