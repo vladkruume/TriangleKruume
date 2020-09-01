@@ -60,6 +60,12 @@ namespace TriangleKruume
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return s;
         }
+        public double SurfaceH()
+        {
+            double s = 0;
+            s = (a*h)/2;
+            return s;
+        }
         public double GetSetA
         {
             get { return a; }
