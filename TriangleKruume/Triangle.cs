@@ -25,11 +25,12 @@ namespace TriangleKruume
         }
         public Triangle(double A,double H)
         {
+            
             a = A;
             h = H;
         }
 
-        public string outputA()
+        public string outputĆ()
         {
             return Convert.ToString(a);
         }
@@ -57,13 +58,13 @@ namespace TriangleKruume
             double s = 0;
             double p = 0;
             p = (a + b + c)/2;
-            s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
+            s = Math.Round(Math.Sqrt((p * (p - a) * (p - b) * (p - c))),2);
             return s;
         }
         public double SurfaceH()
         {
             double s = 0;
-            s = (a*h)/2;
+            s =(a*h)/2;
             return s;
         }
         public double GetSetA
@@ -95,6 +96,34 @@ namespace TriangleKruume
                 else return false;
             }
         }
+        public bool ravn
+        {
+            get
+            {
+                if (a == b&&b==c)
+                    return true;
+                else return false;
+            }
+        }
+        public bool razn
+        {
+            get
+            {
+                if (a!=b && b!=c&& c!=a)
+                    return true;
+                else return false;
+            }
+        }
+        public bool ravnbedr
+        {
+            get
+            {
+                if (a == b && a != c || a == c && c != b || c == b && c != a)
+                    return true;
+                else return false;
+            }
+        }
+
 
     }
     
