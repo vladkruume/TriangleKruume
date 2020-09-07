@@ -57,6 +57,7 @@ namespace TriangleKruume
                 listView1.Items[3].SubItems.Add(triangle.outputH());
                 listView1.Items[5].SubItems.Add(Convert.ToString(triangle.SurfaceH()));
             }
+            
             else if (radioButton2.Checked)
             {
                 b = Convert.ToDouble(txtB.Text);
