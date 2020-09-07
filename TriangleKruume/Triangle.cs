@@ -118,7 +118,7 @@ namespace TriangleKruume
         {
             get
             {
-                if (a == b && a != c || a == c && c != b || c == b && c != a)
+                if (a == b && a != c || a == c && a != b || c == b && c != a)
                     return true;
                 else return false;
             }
